@@ -566,6 +566,9 @@ void setup() {
   relays_setup();
   sound_setup();
   IR_setup();
+  
+  Serial.begin(9600);
+  bt.begin(9600);
 
 }
 
