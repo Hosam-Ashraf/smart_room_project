@@ -574,5 +574,29 @@ void setup() {
 
 void loop() {
 
+switch (statu){
+		case maniual_state: // manual
+			manual();
+			break;
+//		case automatic_state: // automatic
+//			automatic();
+//			break;
+		case IR_control_state: // IR_control
+			IR_control();
+			break;
+		case bluetooth_state: // bluetooth
+			bluetooth_control();
+			break;
+		case wifi_state: // wifi
+			wifi_control();
+			break;
+		case ethernet_state: // ethernet
+			ethernet_control();
+			break;
+      
+		/*default:
+			automatic();
+			break;*/
+	}
 
 }
